@@ -1,0 +1,37 @@
+@use "../utilities" as *;
+
+.pattern{
+
+    img{
+        max-width: 100%;
+    }
+
+    &--top{
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+
+        @include breakpoint-up(large){
+            top: -462px;
+            left: -122px;
+        }
+    }
+
+    &--bottom {
+        display: none;
+        position: absolute;
+        z-index: -1;
+        pointer-events: none;
+        top: 0;
+        left: 0;
+
+        @include breakpoint-up(large){            
+            bottom: -462px;
+            right: -122px;
+        }
+
+    }
+
+}

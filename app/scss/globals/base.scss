@@ -17,4 +17,9 @@ html{
 body{
     font-family: $san_serif_font;
     background-color: var(--dark-cyan);
+    color: var(--dark-blue-desaturated);
+}
+
+main{
+    position: relative;
 }
