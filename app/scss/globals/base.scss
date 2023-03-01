@@ -18,8 +18,8 @@ body{
     font-family: $san_serif_font;
     background-color: var(--dark-cyan);
     color: var(--dark-blue-desaturated);
-    background-image: url('../../../images/bg-pattern-top.svg'),
-      url('../../../images/bg-pattern-bottom.svg');
+    background-image: url('./../../images/bg-pattern-top.svg'),
+      url('./../../images/bg-pattern-bottom.svg');
     background-position: bottom 50vh right 37vw, top 50vh left 37vw;
     background-repeat: no-repeat, no-repeat;
 }
