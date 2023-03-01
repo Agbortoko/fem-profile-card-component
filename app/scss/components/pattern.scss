@@ -10,26 +10,37 @@
         position: absolute;
         z-index: -1;
         pointer-events: none;
-        top: 0;
-        left: 0;
+        top: rem(-462);
+        left: rem(-748);
+
+        @include breakpoint-up(medium){
+            top: rem(-462);
+            left: rem(-505);
+        }
 
         @include breakpoint-up(large){
-            top: -462px;
-            left: -122px;
+            top: rem(-462);
+            left: rem(-122);
         }
     }
 
     &--bottom {
-        display: none;
         position: absolute;
         z-index: -1;
         pointer-events: none;
-        top: 0;
-        left: 0;
+        bottom: 0;
+        right: 0;
+        bottom: rem(-462);
+        right: rem(-748);
+
+        @include breakpoint-up(medium){
+            bottom: rem(-462);
+            right: rem(-505);
+        }
 
         @include breakpoint-up(large){            
-            bottom: -462px;
-            right: -122px;
+            bottom: rem(-462);
+            right: rem(-122);
         }
 
     }
