@@ -50,7 +50,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 I learnt how to carry out positioning of items on my webpage using the position css property
 
 
-``` css
+``` scss
 .pattern{
 
     img{
