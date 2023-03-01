@@ -1,1 +1,61 @@
 @use "../utilities" as *;
+
+.card{
+    width: rem(326);
+    background-color: var(--white);
+    border-radius: rem(14);
+    overflow: hidden;
+    
+
+    &__bg{
+       padding: rem(75);
+       background-size: cover;
+       z-index : -1;
+    }
+    
+    &__body{
+        padding: rem(25);
+        position: relative;
+        width: 100%;
+        top: rem(-73.6);
+        margin-bottom: rem(-73.6); // remove the extra margin caused by the top movement
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: rem(1) solid var(--light-gray);
+    }
+
+    &__image{
+        width: rem(96);
+        height: rem(96);
+        border-radius: 50%;
+        overflow: hidden;
+        border: rem(6) solid var(--white);
+        margin-bottom: rem(15);
+
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__username{
+        font-size: rem(15);
+        margin-bottom: rem(15);
+
+        &--light{
+            font-weight: 400;
+            font-size: rem(14);
+        }
+    }
+
+    &__location{
+        font-size: rem(11.63);
+    }
+    
+    &__footer{     
+        padding: rem(25);
+    }
+}

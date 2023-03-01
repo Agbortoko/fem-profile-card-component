@@ -19,7 +19,18 @@
   <meta property="og:title"       content="Frontend Mentor | Profile card component" />
   <meta property="og:description" content="This is a solution to the Profile card component challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects" />
   <meta property="og:image"       content="./images/favicon-32x32.png" />
-  
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Style -->
+  <link rel="stylesheet" href="dist/css/style.min.css">
+
+  <!-- Script -->
+  <script src="dist/js/script.min.js"></script>
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -27,26 +38,63 @@
   </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main>
 
-  803K
-  Likes
+      <section class="container h-full grid">
 
-  1.4K
-  Photos
+          <div class="card">
 
-  <footer>
+              <div class="card__bg" style="background-image: url('./images/bg-pattern-card.svg');">
+
+              </div>
+
+              <div class="card__body">
+
+                  <div class="card__image">
+                      <img src="./images/image-victor.jpg" alt="Victor Crest Profile Image">
+                  </div>
+
+                  <h3 class="card__username">Victor Crest <span class="card__username--light">26</span> </h3>
+
+                  <p class="card__location">London</p>
+
+              </div>
+
+              <footer class="card__footer">
+
+                  <div class="card__count">
+                      <div class="card__count--value">80K</div>
+                      <div class="card__count--desc">Followers</div>
+                  </div>
+
+                  <div class="card__count">
+                    <div class="card__count--value">803K</div>
+                    <div class="card__count--desc">Likes</div>
+                  </div>
+
+                  <div class="card__count">
+                    <div class="card__count--value">1.4K</div>
+                    <div class="card__count--desc">Photos</div>
+                  </div>
+
+              </footer>
+
+          </div>
+
+      </section>
+
+
+  </main>
+
+
+  <!-- <footer>
 
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="https://www.frontendmentor.io/profile/Agbortoko">Agbortoko Arreychuck</a>.
     </div>
 
-  </footer>
+  </footer> -->
 </body>
 </html>
