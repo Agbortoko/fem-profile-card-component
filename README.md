@@ -47,56 +47,19 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-I learnt how to carry out positioning of items on my webpage using the position css property
+I learnt how set multiple background images in one section
 
 
 ``` scss
-.pattern{
-
-    img{
-        max-width: 100%;
+    body{
+        font-family: $san_serif_font;
+        background-color: var(--dark-cyan);
+        color: var(--dark-blue-desaturated);
+        background-image: url('./../../images/bg-pattern-top.svg'),
+        url('./../../images/bg-pattern-bottom.svg');
+        background-position: bottom 50vh right 37vw, top 50vh left 37vw;
+        background-repeat: no-repeat, no-repeat;
     }
-
-    &--top{
-        position: absolute;
-        z-index: -1;
-        pointer-events: none;
-        top: rem(-462);
-        left: rem(-748);
-
-        @include breakpoint-up(medium){
-            top: rem(-462);
-            left: rem(-505);
-        }
-
-        @include breakpoint-up(large){
-            top: rem(-462);
-            left: rem(-122);
-        }
-    }
-
-    &--bottom {
-        position: absolute;
-        z-index: -1;
-        pointer-events: none;
-        bottom: 0;
-        right: 0;
-        bottom: rem(-462);
-        right: rem(-748);
-
-        @include breakpoint-up(medium){
-            bottom: rem(-462);
-            right: rem(-505);
-        }
-
-        @include breakpoint-up(large){            
-            bottom: rem(-462);
-            right: rem(-122);
-        }
-
-    }
-
-}
 ```
 
 
